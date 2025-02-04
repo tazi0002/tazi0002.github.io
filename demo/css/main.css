@@ -1,0 +1,29 @@
+/*this is the a css comment*/
+body {
+    background-color: rgba(0, 229, 255, 0.341);
+    color: black;
+}
+
+h1 {
+    color: rgba(255,0,0,0.25);
+}
+
+h2,h3 {
+    color: purple;
+}
+footer > p {
+    font-weight: bold;
+}
+
+nav ul {
+    font-size: 150%;
+}
+
+/*classes*/
+.web p{
+    font-style: italic;
+}
+/*id*/
+#featured {
+    font-style: normal;
+}
