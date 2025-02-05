@@ -4,9 +4,6 @@ body {
 header, footer {
     background-color: rgba(13, 73, 212, 0.5);
 }
-nav {
-    background-color: rgb(255, 255, 255);
-}
 .site-title {
     color: #993366
 }
@@ -21,4 +18,15 @@ nav {
 }
 .hobbies li:nth-child(odd) {
     background-color: rgba(234, 255, 0, 0.29);
+}
+nav ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(21, 0, 255);
+}
+a:hover {
+    background-color: rgba(142, 5, 5, 0.411);
 }
