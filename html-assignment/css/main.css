@@ -5,7 +5,7 @@ header, footer {
     background-color: rgba(13, 73, 212, 0.5);
 }
 nav {
-    background-color: rgba(250, 255, 175, 0.319);
+    background-color: rgb(255, 255, 255);
 }
 .site-title {
     color: #993366
@@ -15,4 +15,10 @@ nav {
     width: 150px;
     height: 200px;
     background-color: rgb(43, 43, 43);
+}
+.hobbies ul {
+    list-style-type: square;
+}
+.hobbies li:nth-child(odd) {
+    background-color: rgba(234, 255, 0, 0.29);
 }
