@@ -1,8 +1,9 @@
 html {/*root element*/
+    background-color: #E57373;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    height: 100vh; /* Full viewport height */
+    height: 100%; /* Full viewport height */
     display: flex;
     justify-content: center; /* Centers horizontally */
     scroll-behavior: smooth;
@@ -13,15 +14,12 @@ body {
 
     font-size: 1rem;
     color:rgb(0, 0, 0);
-    background-color: rgba(255, 76, 76, 0.754);
+    background-color: #FFCDD2;
     width: 70vw;
+    height: 200%;
 
 }
 
-main {
-    height: 100vw;
-}
-    
 header {
     background-color: red;
     background-image: url('../images/flag.jpg');
@@ -41,8 +39,6 @@ header {
 }
 
 nav ul {
-    background-color: rgba(0, 0, 0, 0.0);
-   
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -75,8 +71,9 @@ a:hover {
 
 h1{
     font-size: 4rem;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
-    margin-bottom: .5rem;
+    margin-bottom: 4rem;
 }
 
 h2 {
@@ -89,10 +86,27 @@ h3 {
     text-transform: none;
 }
 
-#name, #email, #message {
-    width: 100%; /* Makes the container full-width */
-    max-width: 100%; /* Prevents overflow issues */
+main {
+    height: 95vw;
+}
+    
+.shape-img {
+    float: left;
+    width: 200px;                               
+    shape-outside: url('../images/leaf.png');   /* Wrap text around the actual shape of the image */
+    shape-margin: .25rem;
+}
+
+.contact-form {
+    border: 2px solid #000;  /* 2px thick, solid black border */
+    padding: 20px;            /* Optional: adds space between the border and the content */
+    margin: 20px;  
+}
+.text-box {
+    width: 100%;             /* Makes the container full-width */
+    max-width: 100%;         /* Prevents overflow issues */
     height: 2rem;
+    font-size: 1.5rem;       
 }
 
 #name {
@@ -104,23 +118,38 @@ h3 {
 }
 
 #message {
-    height: 5rem;
+    height: 7rem;
+    line-height: 1rem;     /* Match line-height to font-size to avoid centering */
+    padding-top: .1rem;      /* Adjust as needed to push text toward the top */
+    line-height: 1.5;     /* This sets the line spacing to 1.5 times the font size */
+    resize: none;     /* Disables the resize handle */
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+#answer1, #answer2, #answer3 {
+            /* Scale up the radio button by 1.5 times its original size */
+        transform: scale(1.5);
+        /* Adjust the margin if needed */
+        margin: 0.5rem 0 0 0.5rem;
+}
+
+.button {
+    font-size: 1.25rem; /* Adjust this value as needed */
+    font-weight: bold;
 }
 
 footer p {
     font-weight: bold;
     font-style: italic;
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    
 }
 
-<style>
-
-    button {
-        font-size: 5rem;
-    }
-    .button {
-        font-size: 1.25rem; /* Adjust this value as needed */
-      }
-</style>
