@@ -5,14 +5,16 @@ html {/*root element*/
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center; /* Centers horizontally */
+    scroll-behavior: smooth;
+
 }
 
 body {
 
-    font-size: 2rem;
+    font-size: 1rem;
     color:rgb(0, 0, 0);
     background-color: rgba(255, 76, 76, 0.754);
-    width: 50vw;
+    width: 70vw;
 
 }
 
@@ -21,26 +23,26 @@ main {
 }
     
 header {
-    font-size: 3rem;
     background-color: red;
     background-image: url('../images/flag.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     margin: 0;
     padding: 0;
-    width: 50vw;
+    width: 70vw;
     height: 40vh;
     display: flex;
     justify-content: center; /* Centers horizontally */
-    /*align-items: center;  Centers vertically */
+    align-items: end; /*Centers vertically */
     text-transform: capitalize;
+    margin-bottom: 0.5rem;
     
 }
 
 nav ul {
     background-color: rgba(0, 0, 0, 0.0);
-    padding: 10px 0;
+   
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,8 +53,8 @@ nav ul {
 
 
 nav ul li {
-    padding: 10px 100px;
-    border-right: 2px solid rgb(0, 0, 0); /* Vertical line */
+    padding: 1rem 6rem;
+    border-right: 0.1rem solid rgb(0, 0, 0); /* Vertical line */
 }
         /* Remove border from last item */
 nav ul li:last-child {
@@ -71,14 +73,19 @@ a:hover {
     color: #ffffff;
 }
 
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: capitalize;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: none;
 }
 
@@ -108,3 +115,12 @@ footer p {
     color: rgb(0, 0, 0);
 }
 
+<style>
+
+    button {
+        font-size: 5rem;
+    }
+    .button {
+        font-size: 1.25rem; /* Adjust this value as needed */
+      }
+</style>
