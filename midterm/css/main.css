@@ -82,14 +82,21 @@ h3 {
     text-transform: none;
 }
 
-#name, #email{
+#name, #email, #message {
     width: 100%; /* Makes the container full-width */
     max-width: 100%; /* Prevents overflow issues */
     height: 2rem;
 }
+
+#name {
+    text-transform: capitalize;
+}
+
+#email {
+    text-transform: lowercase;
+}
+
 #message {
-    width: 100%; /* Makes the container full-width */
-    max-width: 100%; /* Prevents overflow issues */
     height: 5rem;
 }
 
@@ -100,3 +107,4 @@ footer p {
     font-size: 2rem;
     color: rgb(0, 0, 0);
 }
+
