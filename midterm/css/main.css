@@ -3,6 +3,7 @@ html {/*root element*/
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
     height: 100%; /* Full viewport height */
     display: flex;
     justify-content: center; /* Centers horizontally */
@@ -15,9 +16,9 @@ body {
     font-size: 1rem;
     color:rgb(0, 0, 0);
     background-color: #FFCDD2;
-    width: 70vw;
-    height: 200%;
-
+    width: 80vw;
+    height: 220%;
+    
 }
 
 header {
@@ -26,9 +27,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0;
-    padding: 0;
-    width: 70vw;
+    width: 80vw;
     height: 40vh;
     display: flex;
     justify-content: center; /* Centers horizontally */
@@ -49,7 +48,7 @@ nav ul {
 
 
 nav ul li {
-    padding: 1rem 6rem;
+    padding: 1rem 4rem;
     border-right: 0.1rem solid rgb(0, 0, 0); /* Vertical line */
 }
         /* Remove border from last item */
@@ -135,7 +134,7 @@ label {
             /* Scale up the radio button by 1.5 times its original size */
         transform: scale(1.5);
         /* Adjust the margin if needed */
-        margin: 0.5rem 0 0 0.5rem;
+        margin: 1rem 1rem 0 0.5rem;
 }
 
 .button {
