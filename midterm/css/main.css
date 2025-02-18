@@ -1,40 +1,46 @@
-html {/*root element*/
+html {
     background-color: #E57373;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Full viewport height */
-    display: flex;
-    justify-content: center; /* Centers horizontally */
+    /* display: flex;
+    justify-content: center; Centers horizontally */
     scroll-behavior: smooth;
 
 }
 
 body {
-
-    font-size: 1rem;
     color:rgb(0, 0, 0);
-    background-color: #FFCDD2;
+    /* background-color: #FFCDD2;
     width: 80vw;
-    height: 220%;
+    padding: 2rem; */
+ 
     
 }
 
 header {
+    position: relative;
     background-color: red;
-    background-image: url('../images/flag.jpg');
+    background-image: url("../images/flag.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 80vw;
-    height: 40vh;
+    width: 100%;
+    height: 50vh;
+    min-height: 100px;
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: end; /*Centers vertically */
-    text-transform: capitalize;
     margin-bottom: 0.5rem;
-    
+    padding: 0;
+    z-index: 9;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    z-index: 9;
+
 }
 
 nav ul {
@@ -42,8 +48,10 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex; /* Makes items align horizontally */
-    justify-content: center; /* Centers the navigation links */
-    
+    justify-content: center; /*Centers the navigation links */
+    text-align: center;
+    z-index: 9;
+
     }
 
 
@@ -51,9 +59,9 @@ nav ul li {
     padding: 1rem 4rem;
     border-right: 0.1rem solid rgb(0, 0, 0); /* Vertical line */
 }
-        /* Remove border from last item */
+      
 nav ul li:last-child {
-    border-right: none;
+    border-right: none;  /* Remove border from last item */
  }
 
 a {
@@ -68,12 +76,14 @@ a:hover {
     color: #ffffff;
 }
 
-h1{
-    font-size: 4rem;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    margin-bottom: 4rem;
+.wrapper {
+    background-color: rgb(239, 156, 156);
+width: 150vh;
+padding: 2rem;
+margin: auto;
+    
 }
+
 
 h2 {
     font-size: 2rem;
@@ -84,16 +94,12 @@ h3 {
     font-size: 1.5rem;
     text-transform: none;
 }
-
-main {
-    height: 95vw;
-}
-    
+   
 .shape-img {
     float: left;
     width: 200px;                               
     shape-outside: url('../images/leaf.png');   /* Wrap text around the actual shape of the image */
-    shape-margin: .25rem;
+    shape-margin: 0.5rem;
 }
 
 .contact-form {
@@ -101,6 +107,7 @@ main {
     padding: 20px;            /* Optional: adds space between the border and the content */
     margin: 20px;  
 }
+
 .text-box {
     width: 100%;             /* Makes the container full-width */
     max-width: 100%;         /* Prevents overflow issues */
@@ -127,18 +134,15 @@ main {
 label {
     font-size: 1rem;
     font-weight: bold;
-
 }
 
 #answer1, #answer2, #answer3 {
-            /* Scale up the radio button by 1.5 times its original size */
-        transform: scale(1.5);
-        /* Adjust the margin if needed */
-        margin: 1rem 1rem 0 0.5rem;
+    transform: scale(1.5);
+    margin: 1rem 1rem 0 0.5rem;
 }
 
 .button {
-    font-size: 1.25rem; /* Adjust this value as needed */
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -148,7 +152,5 @@ footer p {
     text-align: right;
     font-size: 1.25rem;
     color: rgb(0, 0, 0);
-    transform-origin: bottom right;
-    
-}
 
+}
