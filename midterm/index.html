@@ -8,10 +8,14 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+ <div class="wrapper">
+ <header>
+  <div class="container">
    <h1>Canada</h1>
-  </header> 
-   <nav>
+   <img src="images/flag.jpg" alt="Canada's flag">
+  </div>
+  </header>
+    <nav>
     <ul>
      <li><a href="index.html">Home</a></li>
      <li><a href="#history">History</a></li>
@@ -19,10 +23,9 @@
      <li><a href="#contact">Contact</a></li>
     </ul>
    </nav>
-   <div class="wrapper">
   <main>
-    <h2 id="history">History of Canada</h2>
-     <img src="images/leaf.png" title="Oh Canada!" alt="Maple leaf" width="200" height="200" class="shape-img">
+     <h2 id="history">History of Canada</h2>
+     <img src="images/leaf.jpg" title="Oh Canada!" alt="Maple leaf" width="200" height="200" class="wrap-img">
       <p>
         Canada's history dates back thousands of years when Indigenous peoples lived across the land. They developed rich cultures, languages, and traditions, forming complex societies that thrived in diverse environments. These Indigenous groups, including the First Nations, Métis, and Inuit, developed distinct ways of life suited to their surroundings. Some lived as nomadic hunters following bison herds across the plains, while others built permanent settlements and engaged in fishing, agriculture, and trade. Spirituality and respect for the land were central to Indigenous cultures, as they viewed themselves as caretakers of nature rather than its owners.
 
@@ -42,7 +45,7 @@
         On July 1, 1867, the British North America Act (now the Constitution Act, 1867) created the Dominion of Canada, uniting Ontario, Quebec, New Brunswick, and Nova Scotia. This marked the birth of Canada as a self-governing nation within the British Empire. Over time, other regions joined Confederation, including Manitoba (1870), British Columbia (1871), Prince Edward Island (1873), Alberta and Saskatchewan (1905), and Newfoundland (1949). The Yukon, Northwest Territories, and Nunavut became territories rather than provinces.
       </p>
     <h2 id="facts">Facts about Canada</h2>
-     <ul>
+     <ul id="facts-list">
       <li>Canada has the longest coastline in the world. Stretching 202,080 km (125,190 miles), Canada's coastline is longer than the next four longest coastlines combined!</li>
       <li>It's home to the world's most lakes. Canada has over 2 million lakes, covering nearly 9% of the country's landmass.</li>
       <li>Canada has two official national sports. Lacrosse is the national summer sport, and hockey is the official winter sport.</li>
@@ -51,13 +54,13 @@
     <h3 id="contact">Contact to learn more</h3>
     
      <div class="contact-form">
-      <label for="name">Your name</label>
+      <label for="name">Your Name</label>
       <input id="name" name="name" class="text-box" type="text" style="margin: 0.5rem 0;">
 
       <label for="email">Your Email</label>
       <input id="email" name="email" class="text-box" type="email" style="margin: 0.5rem 0;">
      
-      <label for="message">Your message</label>
+      <label for="message">Your Message</label>
       <textarea id="message" name="message" class="text-box" style="margin: 0.5rem 0;"></textarea>
     
      <h3>Do you love Canada?</h3>

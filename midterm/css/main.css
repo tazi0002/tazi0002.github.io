@@ -2,57 +2,56 @@ html {
     background-color: #E57373;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex;
-    justify-content: center; Centers horizontally */
     scroll-behavior: smooth;
-
-}
-
-body {
     color:rgb(0, 0, 0);
-    /* background-color: #FFCDD2;
-    width: 80vw;
-    padding: 2rem; */
- 
-    
 }
 
 header {
     position: relative;
-    background-color: red;
-    background-image: url("../images/flag.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 50vh;
-    min-height: 100px;
+    height: 100%;
     display: flex;
     justify-content: center; /* Centers horizontally */
-    align-items: end; /*Centers vertically */
-    margin-bottom: 0.5rem;
-    padding: 0;
-    z-index: 9;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: -2rem;
+
 }
 
 h1 {
-    font-size: 4rem;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    font-size: 3rem;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    z-index: 9;
+    text-shadow: #000 0.1rem 0.1rem 0.2rem;
+}
+
+.container {
+    position: relative;
+    max-width: 500%;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+  }
+
+h1 {
 
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex; /* Makes items align horizontally */
     justify-content: center; /*Centers the navigation links */
     text-align: center;
-    z-index: 9;
-
-    }
+     }
 
 
 nav ul li {
@@ -78,16 +77,19 @@ a:hover {
 
 .wrapper {
     background-color: rgb(239, 156, 156);
-width: 150vh;
-padding: 2rem;
-margin: auto;
-    
+    width: 150vh;
+    padding: 2rem;
+    margin: auto;
+    position: relative;
 }
-
 
 h2 {
     font-size: 2rem;
     text-transform: capitalize;
+}
+
+#facts-list {
+    margin-left: -1.75rem;
 }
 
 h3 {
@@ -95,18 +97,16 @@ h3 {
     text-transform: none;
 }
    
-.shape-img {
+.wrap-img {
     float: left;
     width: 200px;                               
-    shape-outside: url('../images/leaf.png');   /* Wrap text around the actual shape of the image */
-    shape-margin: 0.5rem;
+    margin: 0 1.5rem 1rem 0; 
 }
 
 .contact-form {
     border: 2px solid #000;  /* 2px thick, solid black border */
     padding: 20px;            /* Optional: adds space between the border and the content */
-    margin: 20px;  
-}
+ }
 
 .text-box {
     width: 100%;             /* Makes the container full-width */
@@ -147,10 +147,7 @@ label {
 }
 
 footer p {
-    font-weight: bold;
-    font-style: italic;
     text-align: right;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
-
 }
