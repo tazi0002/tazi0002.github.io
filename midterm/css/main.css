@@ -1,150 +1,161 @@
-html {
+
+   html {
     background-color: #E57373;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    color:rgb(0, 0, 0);
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    color: rgb(0, 0, 0);
 }
 
-header {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 150vh;
-    height: 100%;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    padding: 0; /* Removes extra padding inside */
-    margin: -2rem; /* Offsets wrapper padding */
-    width: calc(100% + 64px); /* Ensures full width */
 
+header {
+    position: relative; /* Allows child elements to be positioned */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-position: center; /* Centers background */
+    background-size: cover; /* Makes image cover the header */
+    width: 150vh; /* Fixed width */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    padding: 0; /* Removes internal padding */
+    margin: -2rem; /* Offsets wrapper padding */
+    width: calc(100% + 64px); /* Expands width to fit wrapper */
 }
 
 h1 {
     position: absolute;
     width: 100%;
-    top: 50%;
-    text-align: center;
+    top: 60%; /* Adjustes text vertically */
+    text-align: center; /* Centers text horizontally */
     font-size: 3rem;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     text-transform: uppercase;
     text-shadow: #000 0.1rem 0.1rem 0.2rem;
 }
 
+
 .container {
-    position: relative;
-    max-width: 500%;
-    text-align: center;
+    position: relative; /* Ensures content positioning */
+    max-width: 500%; /* Prevents excessive width */
+    text-align: center; /* Centers content */
 }
 
 .container img {
-    width: 100%;
-  }
-
-h1 {
-
+    width: 100%; /* Ensures images fill the container */
 }
+
+
+.wrap-img {
+    float: left; /* Aligns image to the left */
+    width: 200px; /* Fixed width */
+    margin: 0 1.5rem 1.5rem 0; /* Adds spacing around image */
+}
+
 
 nav ul {
-    list-style-type: none;
-    display: flex; /* Makes items align horizontally */
-    justify-content: center; /*Centers the navigation links */
-    text-align: center;
-     }
-
+    list-style-type: none; /* Removes default list styling */
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers navigation links */
+    text-align: center; /* Aligns text */
+}
 
 nav ul li {
-    padding: 1rem 4rem;
-    border-right: 0.1rem solid rgb(0, 0, 0); /* Vertical line */
+    padding: 1.5rem 4rem 0 4rem; /* Adds padding around links */
+    border-right: 0.1rem solid rgb(0, 0, 0); /* Creates a vertical separator */
 }
-      
+
+/* Removes border from last menu item */
 nav ul li:last-child {
-    border-right: none;  /* Remove border from last item */
- }
+    border-right: none;
+}
+
 
 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
+    text-decoration: none; /* Removes underline */
+    color: rgb(0, 0, 0); /* Sets link color */
+    font-size: 2rem; 
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s; /* Smooth hover effect */
 }
+
 
 a:hover {
     color: #ffffff;
 }
 
+
 .wrapper {
-    background-color: rgb(239, 156, 156);
-    width: 150vh;
-    padding: 2rem;
-    margin: auto;
-    position: relative;
+    background-color: rgb(239, 156, 156); 
+    width: 150vh; /* Fixed width */
+    padding: 2rem; /* Adds space around content */
+    margin: auto; /* Centers wrapper */
+    position: relative; /* Keeps relative positioning */
 }
+
 
 h2 {
     font-size: 2rem;
-    text-transform: capitalize;
-}
-
-#facts-list {
-    margin-left: -1.75rem;
+    text-transform: capitalize; /* Capitalizes first letter */
 }
 
 h3 {
     font-size: 1.5rem;
-    text-transform: none;
+    text-transform: none; /* Normal capitalization */
 }
-   
-.wrap-img {
-    float: left;
-    width: 200px;                               
-    margin: 0 1.5rem 1rem 0; 
+
+
+#facts-list {
+    margin-left: -1.75rem; /* Aligns list correctly */
 }
+
 
 .contact-form {
-    border: 2px solid #000;  /* 2px thick, solid black border */
-    padding: 20px;            /* Optional: adds space between the border and the content */
- }
-
-.text-box {
-    width: 100%;             /* Makes the container full-width */
-    max-width: 100%;         /* Prevents overflow issues */
-    height: 2rem;
-    font-size: 1.5rem;       
+    border: 2px solid #000; /* Black border */
+    padding: 20px;
 }
 
+
+.text-box {
+    width: 100%;
+    max-width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+
 #name {
-    text-transform: capitalize;
+    text-transform: capitalize; /* Capitalizes first letter */
 }
 
 #email {
-    text-transform: lowercase;
+    text-transform: lowercase; /* Converts text to lowercase */
 }
+
 
 #message {
     height: 7rem;
-    line-height: 1rem;     /* Match line-height to font-size to avoid centering */
-    padding-top: .1rem;      /* Adjust as needed to push text toward the top */
-    line-height: 1.5;     /* This sets the line spacing to 1.5 times the font size */
-    resize: none;     /* Disables the resize handle */
+    line-height: 1.5;
+    padding-top: 0.1rem;
+    resize: none; /* Disables resizing */
 }
+
 
 label {
     font-size: 1rem;
     font-weight: bold;
 }
 
+
 #answer1, #answer2, #answer3 {
-    transform: scale(1.5);
-    margin: 1rem 1rem 0 0.5rem;
+    transform: scale(1.5); /* Increases size */
+    margin: 1rem 1rem 0 0.5rem; /* Adds spacing */
 }
+
 
 .button {
     font-size: 1.25rem;
     font-weight: bold;
 }
+
 
 footer p {
     text-align: right;
