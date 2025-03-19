@@ -47,6 +47,7 @@ h1 {
 .wrap-img {
     float: left; /* Aligns image to the left */
     width: 200px; /* Fixed width */
+    height: 100%;
     margin: 0 1.5rem 1.5rem 0; /* Adds spacing around image */
 }
 
@@ -160,5 +161,5 @@ label {
 footer p {
     text-align: right;
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
 }
