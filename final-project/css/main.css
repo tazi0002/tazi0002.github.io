@@ -616,8 +616,8 @@ margin: 0px 10px;
         
 
 
-.con-wrapper h2 {
-    margin: 35px 0 0 0;
+footer h2 {
+    margin: 35px 0 0 20px;
         font-size: 3em;
         font-weight: bold;
         line-height: 1.5;
@@ -1023,7 +1023,30 @@ margin: 0px 10px;
             margin: 0;
           }
 
-
+          .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 2fr); 
+            gap: 0px;
+            padding: 0px;
+          }
+        
+            
+          /* Row 1: dig and mar take up 2 columns */
+          .con-wrapper {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+          }
+        
+          .loc-wrapper {
+            grid-column: 3 / span 2;
+            grid-row: 1;
+          }
+        
+          /* Row 2: vid, web, pri each take 1 column */
+          .ope-wrapper {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+          }
 
 
 
