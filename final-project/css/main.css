@@ -1,1034 +1,949 @@
 html {
-    background-color: #ffffff;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth; /* Enables smooth scrolling */
-    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* Set background to white */
+    font-size: 16px; /* Base font size for consistent scaling */
+    font-family: "Roboto", sans-serif; /* Use Roboto font with sans-serif fallback */
+    scroll-behavior: smooth; /* Smooth scrolling when navigating anchors */
+    color: rgb(0, 0, 0); /* Default text color: black */
 }
 
 h1 {
-        font-size: 4.5em;
-        font-weight: bold;
-        line-height: 1.5;
-        color: #000000;
+    font-size: 4.5em; /* Very large heading text */
+    font-weight: bold; /* Make text bold */
+    line-height: 1.5; /* Spacing between lines */
+    color: #000000; /* Text color: black */
 }
 
 h2 {
-        margin: 35px 0 0 20px;
-        font-size: 3em;
-        font-weight: bold;
-        line-height: 1.5;
-        color: #000000;
-      }
+    margin: 35px 0 0 20px; /* Space around heading: top, right, bottom, left */
+    font-size: 3em; /* Large subheading */
+    font-weight: bold; /* Bold text */
+    line-height: 1.5; /* Line height for readability */
+    color: #000000; /* Black color text */
+}
 
- h3 {
-        font-size: 2em;
-        font-weight: bold;
-        line-height: 1.5;
-        color: #000000;
-    }
+h3 {
+    font-size: 2em; /* Medium heading */
+    font-weight: bold; /* Bold text */
+    line-height: 1.5; /* Improve readability */
+    color: #000000; /* Black color text */
+}
 
 h4 {
-        font-size: 1em;
-        font-weight: bold;
-        line-height: 1.5em;
-        color: #000000;
-        width: 760px;
+    font-size: 1em; /* Normal paragraph-sized heading */
+    font-weight: bold; /* Bold text */
+    line-height: 1.5em; /* Slightly larger spacing between lines */
+    color: #000000; /* Black color */
+    width: 760px; /* Set fixed width for heading */
 }
 
 .body-wrapper {
-    max-width: 760px;
-    margin: 0 auto;
-  }
-
+    max-width: 760px; /* Restrict body width to 760px */
+    margin: 0 auto; /* Center the content horizontally */
+}
 
 .hdr-wrapper {
-  background-color: #000000;
-  padding: 15px 0 0 0;
-  margin: 0;
-  width: 100%;
-  text-align: center;
-
+    background-color: #000000; /* Black background for header */
+    padding: 15px 0 0 0; /* Add padding to the top only */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Full width header */
+    text-align: center; /* Center-align text inside */
 }
 
 .hdr-wrapper nav ul {
-    list-style-type: none;
-
+    list-style-type: none; /* Remove bullet points from nav list */
 }
 
 #logo {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 100px;
-    height: 100px;
-    background-image: url('../images/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-  }
+    position: absolute; /* Position absolutely relative to parent */
+    top: 15px; /* Position 15px from top */
+    left: 15px; /* Position 15px from left */
+    width: 100px; /* Set logo width */
+    height: 100px; /* Set logo height */
+    background-image: url('../images/logo.png'); /* Use logo image as background */
+    background-size: contain; /* Scale image to fit without cropping */
+    background-repeat: no-repeat; /* Do not repeat image */
+    background-position: center; /* Center the image inside container */
+}
 
 .hdr-container-1 {
-  position: relative;
-  background-color: #c68d00;
-  margin: 0 15px 15px 15px;
-  height: 170px;
-  text-align: center;
-  
+    position: relative; /* Required for absolutely positioned children */
+    background-color: #c68d00; /* Set background color (gold shade) */
+    margin: 0 15px 15px 15px; /* Outer spacing on all sides except top */
+    height: 170px; /* Set fixed height */
+    text-align: center; /* Center-align all text */
 }
 
 .hdr-container-2 {
-    position: relative;
-    background-color: #000000;
-    padding: 5px;
-  }
+    position: relative; /* Relative for child positioning */
+    background-color: #000000; /* Black background for nav bar */
+    padding: 5px; /* Padding inside the container */
+}
 
 .hdr-container-1 nav ul li a {
-    color: #000000;
+    color: #000000; /* Navigation link color: black */
 }
+
 .hdr-container-2 nav ul li a {
-    color: #c78c06;
+    color: #c78c06; /* Navigation link color: gold */
 }
+
 .hdr-wrapper nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
 }
+
 .hdr-wrapper nav ul li a:visited {
-    text-decoration: none;
+    text-decoration: none; /* Prevent underline on visited links */
 }
-.hdr-wrapper nav ul li a:hover{
-    color: #ffffff; /* or another hover color */
+
+.hdr-wrapper nav ul li a:hover {
+    color: #ffffff; /* Change text color to white on hover */
 }
 
 .hdr-container-1 li {
-    height: 150px;
-    display: flex;
-    align-items: flex-end;   /* pushes content to the bottom */
-    justify-content: center; /* centers horizontally */
-    padding-bottom: 10px;
-    font-size: 1.25em;
+    height: 150px; /* Height of navigation item */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-end; /* Align items at the bottom */
+    justify-content: center; /* Center items horizontally */
+    padding-bottom: 10px; /* Space below each item */
+    font-size: 1.25em; /* Slightly larger text */
 }
+
 .hdr-container-2 li {
-    margin: 10px;
-    padding: 10px;
-    font-size: 1.25em;
+    margin: 10px; /* Space around each nav item */
+    padding: 10px; /* Padding inside nav item */
+    font-size: 1.25em; /* Font size for nav links */
 }
 
 .search-box {
-    display: flex;
-    align-items: center;
-    gap: 0px; /* space between input and button */
-    margin: 10px;
-  }
-  
-  #Search {
-    flex: 1;                 /* allows it to grow */
-    height: 30px;
-
-  }
-  
-  #mag {
-    height: 35px;
-    width: 35px;
-    padding: 2px;
-    background-color: #000000;
-    color: #c78c06;
-    border: 1px solid #c78c06;
-    cursor: pointer;
-    font-size: 1.5em;
-  }
-
-
-.wel-wrapper {
-
-    position: relative;
-    background-image: url('../images/main-banner.jpg');
-    background-size: cover; 
-    display: flex;
+    display: flex; /* Flexbox layout for search */
+    align-items: center; /* Vertically center input and button */
+    gap: 0px; /* No gap between elements */
+    margin: 10px; /* Space around the whole box */
 }
+
+#Search {
+    flex: 1; /* Allow input to grow and fill space */
+    height: 30px; /* Set input height */
+}
+
+#mag {
+    height: 35px; /* Button height */
+    width: 35px; /* Button width */
+    padding: 2px; /* Inner padding */
+    background-color: #000000; /* Button background color */
+    color: #c78c06; /* Button text color */
+    border: 1px solid #c78c06; /* Button border color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Button text size */
+}
+.wel-wrapper {
+    position: relative; /* Needed to absolutely position child elements */
+    background-image: url('../images/main-banner.jpg'); /* Background image for welcome banner */
+    background-size: cover; /* Cover the entire container */
+    display: flex; /* Use flex layout for child elements */
+}
+
 .wel-wrapper h1 {
-    margin: 0px 10px;
-    color: #ffffff;
+    margin: 0px 10px; /* Horizontal spacing around heading */
+    color: #ffffff; /* White text for visibility over dark background */
 }
 
 .wel-wrapper p {
-    color: #ffffff;
-    line-height: 1.5;
-    margin: 0px 10px 0 10px;
+    color: #ffffff; /* White text */
+    line-height: 1.5; /* Line spacing for readability */
+    margin: 0px 10px 0 10px; /* Equal horizontal margin */
 }
 
 .wel-container {
-    background-color: #00000074;
-    margin: 65px 0 65px 0; 
-    padding:25px 10px 5px 6px;
+    background-color: #00000074; /* Semi-transparent black overlay */
+    margin: 65px 0 65px 0; /* Vertical spacing around container */
+    padding: 25px 10px 5px 6px; /* Inner spacing for content */
 }
 
 #con {
-    background-color: #c78c06;
-    color: #000000;
-    display: inline-block;
-    padding: 30px;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 1.5em;
+    background-color: #c78c06; /* Gold background for call-to-action */
+    color: #000000; /* Black text for contrast */
+    display: inline-block; /* Make container fit its content */
+    padding: 30px; /* Padding around text */
+    margin: 10px; /* Outer margin */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 1.5em; /* Large text for emphasis */
 }
-
 .abo-wrapper {
-    position: relative;
-    background-color: #ffe6ac;
-    padding: 15px 0;
-    background-size: cover;
-
+    position: relative; /* Enable child absolute positioning if needed */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 15px 0; /* Top and bottom padding */
+    background-size: cover; /* Stretch background to cover container */
 }
 
 .abo-container {
-    position: relative;
-    background-image: url('../images/about-us.jpg');
-    margin: 0 15px; 
-    height: 390px;
-
-    background-size: cover; 
-    display: flex;
+    position: relative; /* Required for background and child elements */
+    background-image: url('../images/about-us.jpg'); /* About section background image */
+    margin: 0 15px; /* Horizontal margin */
+    height: 390px; /* Fixed height */
+    background-size: cover; /* Cover container fully */
+    display: flex; /* Flex container */
 }
 
 .abo-wrapper h2 {
-    margin: 35px 15px 15px 15px;
- }
-    
+    margin: 35px 15px 15px 15px; /* Margin: top, right, bottom, left */
+}
+
 .abo-wrapper p {
-        color: #000000;
-        line-height: 1.5;
-        margin:15px;
-    }
-
-
-
+    color: #000000; /* Black text */
+    line-height: 1.5; /* Spacing for readability */
+    margin: 15px; /* All-around margin */
+}
 
 .our-h2 {
-        margin: 35px 0 15px 15px;
+    margin: 35px 0 15px 15px; /* Specific heading margin */
 }
-          
-
-
 
 .dig-wrapper {
-        position: relative;
-        background-color: #ffe6ac;
-        padding: 0;
-        background-size: cover;
-        margin: 0 15px 15px 15px;
-    }
-    .dig-wrapper h3 {
-        margin: 15px;
+    position: relative; /* For layering or child positioning */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 0; /* No internal padding */
+    background-size: cover; /* Make background image fill the container */
+    margin: 0 15px 15px 15px; /* Margin on all sides except top */
 }
-    
+
+.dig-wrapper h3 {
+    margin: 15px; /* Space around heading */
+}
+
 .dig-wrapper p {
-        color: #000000;
-        line-height: 1.5;
-        margin: 0px 15px 0 15px;
-    }
+    color: #000000; /* Paragraph text color */
+    line-height: 1.5; /* Line spacing for readability */
+    margin: 0px 15px 0 15px; /* Horizontal margins */
+}
 
-            
 .dig-container {
-
-        background-image: url('../images/digital.jpg');
-        margin: 0; 
-        background-size: cover;
-
-        height: 500px;
-     
-
-    }
-
+    background-image: url('../images/digital.jpg'); /* Background image for digital section */
+    margin: 0; /* Remove default margin */
+    background-size: cover; /* Cover entire container */
+    height: 500px; /* Set fixed height */
+}
 
 #dig {
-            background-color: #000000;
-            color: #ffffff;
-            display: inline-block;
-            padding: 30px;
-            margin: 10px;
-            cursor: pointer;
-            font-size: 1.5em;
-
-        }
-
-
-
-        .mar-wrapper {
-            position: relative;
-            background-color: #ffe6ac;
-            padding: 0;
-            background-size: cover;
-            margin: 15px;
-        }
-        .mar-wrapper h3 {
-            margin: 10px 0 10px 15px;
-
-        }
-        
-    .mar-wrapper p {
-            color: #000000;
-            line-height: 1.5;
-            margin: 0 0 10px 15px;
-        }
-    
-    
-                
-    .mar-container {
-    
-            background-image: url('../images/marketing.jpg');
-            margin: 0; 
-            background-size: cover;
-
-            height: 500px;
-         
-    
-        }
-    
-    
-    
-    #mar {
-                background-color: #000000;
-                color: #ffffff;
-                display: inline-block;
-                padding: 30px;
-                margin: 10px;
-                cursor: pointer;
-                font-size: 1.5em;
-            }
-    
-
-            .vid-wrapper {
-                position: relative;
-                background-color: #ffe6ac;
-                padding: 0;
-                background-size: cover;
-                margin: 15px;
-            }
-            .vid-wrapper h3 {
-                margin: 15px;
-
-            }
-            
-        .vid-wrapper p {
-                color: #000000;
-                line-height: 1.5;
-                margin: 0px 15px 0 15px;
-            }
-        
-        
-                    
-        .vid-container {
-        
-                background-image: url('../images/video.jpg');
-                margin: 0; 
-                background-size: cover;
-
-                height: 500px;
-             
-        
-            }
-        
-        
-        
-        #vid {
-                    background-color: #000000;
-                    color: #ffffff;
-                    display: inline-block;
-                    padding: 30px;
-                    margin: 10px;
-                    cursor: pointer;
-                    font-size: 1.5em;
-                }
-
-
-                .web-wrapper {
-                    position: relative;
-                    background-color: #ffe6ac;
-                    padding: 0;
-                    background-size: cover;
-                    margin: 15px;
-                }
-                .web-wrapper h3 {
-                    margin: 15px;
-
-                }
-                
-            .web-wrapper p {
-                    color: #000000;
-                    line-height: 1.5;
-                    margin: 0px 15px;
-                }
-            
-            
-                        
-            .web-container {
-            
-                    background-image: url('../images/web.jpg');
-                    margin: 0; 
-                    background-size: cover;
-
-                    height: 500px;
-                 
-            
-                }
-            
-            
-            
-            #web {
-                        background-color: #000000;
-                        color: #ffffff;
-                        display: inline-block;
-                        padding: 30px;
-                        margin: 10px;
-                        cursor: pointer;
-                        font-size: 1.5em;
-                    }
-                    
-                    .pri-wrapper {
-                        position: relative;
-                        background-color: #ffe6ac;
-                        padding: 0;
-                        background-size: cover;
-                        margin: 15px;
-                    }
-                    .pri-wrapper h3 {
-                        margin:15px;
-
-                    }
-                    
-                .pri-wrapper p {
-                        color: #000000;
-                        line-height: 1.5;
-                        margin:0 15px;
-                    }
-                
-                
-                            
-                .pri-container {
-                
-                        background-image: url('../images/print.jpg');
-                        margin: 0; 
-                        background-size: cover;
- 
-                        height: 500px;
-                     
-                
-                    }
-                
-                
-                
-                #pri {
-                            background-color: #000000;
-                            color: #ffffff;
-                            display: inline-block;
-                            padding: 30px;
-                            margin: 10px;
-                            cursor: pointer;
-                            font-size: 1.5em;
-                        }
-                        
-                        
-
-
-                        .vis-wrapper {
-                            position: relative;
-                            background-image: url('../images/vision.jpg');
-                            padding: 35px 0 0 0;
-                            background-size: cover;
-                            margin: 0;
-                        }
-                        .vis-wrapper h3 {
-                            margin: 10px 15px;
-                            color: #ffffff;
-                        }
-                        
-                    .vis-wrapper p {
-                            color: #ffffff;
-                            line-height: 1.5;
-                            margin:0 15px;
-                        }
-  
-                    
-                    #vis {
-                                background-color: #07092a;
-                                color: #ffffff;
-                                display: inline-block;
-                                padding: 30px;
-                                margin: 10px;
-                                cursor: pointer;
-                                border: #c78c06 1.5px solid;
-                                font-size: 1.5em;
-                            }    
-
-.tea-h2 {
-        margin: 25px 0 15px 15px;
-
-        }
-
-        .joh-wrapper {
-            position: relative;
-            background-color: #ffe6ac;
-            padding: 0 0 35px 0;
-            margin: 0 15px;
-            background-size: cover;
-            width: 100%;
-
-        }
-        .joh-container {
-
-            background-image: url('../images/john.jpg');
-            margin: 0 15px; 
-            background-size: cover;
-            height: 500px;
-            width: 100%;
-            position: relative;
-            background-color: #ffe6ac;
-
-            background-size: cover; 
-            height: 500px;
-    
-        }
-.joh-wrapper h3 {
-        margin: 15px 0 0 15px;
-
-        }
-.joh-wrapper h4 {
-        margin: 5px 0 0 15px;
-
-        }
-
-.joh-wrapper p {
-            color: #000000;
-            line-height: 1.5;
-            margin: 15px;
-        }
-
-
-
-
-
-.bob-wrapper {
-    position: relative;
-    background-color: #ffe6ac;
-    margin: 0 15px;
-    padding: 0 0 35px 0;
-    background-size: cover;
-    width: 100%;
-        }
-
-.bob-container {
-
-            background-image: url('../images/bob.jpg');
-            margin: 0 15px; 
-            background-size: cover;
-            position: relative;
-            background-color: #ffe6ac;
-            width: 100%;
-            background-size: cover; 
-            height: 500px;
-         
-    
-        }
-.bob-wrapper h3 {
-    margin: 15px 0 0 15px;
-
-        }
-.bob-wrapper h4 {
-    margin: 5px 0 0 15px;
-
-        }
-
-.bob-wrapper p {
-            color: #000000;
-            line-height: 1.5;
-            margin: 0px 15px ;
-        }
-
-        .hr-line {
-            border: none;
-            height: 2px;
-            background-color: #c78c06; /* your theme color */
-              /* or a set width like 200px */
-            margin: 0 15px 15px 15px;
-          }
-
-        .contact-form {
-            border: 2px solid #000; /* Black border */
-            padding: 20px;
-        }
-        
-        
-        .text-box {
-            width: 100%;
-            max-width: 100%;
-            height: 2rem;
-            font-size: 1.5rem;
-        }
-        
-        
-        #name {
-            text-transform: capitalize; /* Capitalizes first letter */
-        }
-        
-        #email {
-            text-transform: lowercase; /* Converts text to lowercase */
-        }
-        
-        
-        #message {
-            height: 7rem;
-            line-height: 1.5;
-            padding-top: 0.1rem;
-            resize: none; /* Disables resizing */
-        }
-        
-        
-        label {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-        
-        
-     
-        
-
-
-footer h2 {
-    margin: 35px 0 0 20px;
-
-    }
-
-.con-wrapper h3 {
-        margin: 25px 0 25px 0;
-
-        }
-
-.con-wrapper {
-            position: relative;
-            margin: 0 15px;
-            background-size: cover;
-
-        }
-
-.text-box {
-            margin: 0.5rem 0;
+    background-color: #000000; /* Button background: black */
+    color: #ffffff; /* Text color: white */
+    display: inline-block; /* Let size match content */
+    padding: 30px; /* Internal space around text */
+    margin: 10px; /* Outer space */
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 1.5em; /* Emphasized button text */
 }
 
-        #con2 {
-            background-color: #000000;
-            color: #c78c06;
-            display: inline-block;
-            padding: 5px;
-            margin: 10px 0 0 0;
-            cursor: pointer;
-            font-size: 1.5em;
-        }    
+.mar-wrapper {
+    position: relative; /* Container allows child positioning */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 0; /* No padding inside */
+    background-size: cover; /* Stretch background image */
+    margin: 15px; /* Even spacing around container */
+}
+
+.mar-wrapper h3 {
+    margin: 10px 0 10px 15px; /* Top/bottom and left spacing for heading */
+}
+
+.mar-wrapper p {
+    color: #000000; /* Text color: black */
+    line-height: 1.5; /* Readable line height */
+    margin: 0 0 10px 15px; /* Bottom and left spacing */
+}
+
+.mar-container {
+    background-image: url('../images/marketing.jpg'); /* Background image for marketing section */
+    margin: 0; /* Reset default margin */
+    background-size: cover; /* Cover container */
+    height: 500px; /* Set height */
+}
+
+#mar {
+    background-color: #000000; /* Dark button background */
+    color: #ffffff; /* Light text */
+    display: inline-block; /* Auto-sized box */
+    padding: 30px; /* Button padding */
+    margin: 10px; /* Button margin */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.5em; /* Big text */
+}
+
+.vid-wrapper {
+    position: relative; /* Needed for background layering */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 0; /* No internal spacing */
+    background-size: cover; /* Ensure background image covers container */
+    margin: 15px; /* Margin on all sides */
+}
+
+.vid-wrapper h3 {
+    margin: 15px; /* Margin around heading */
+}
+
+.vid-wrapper p {
+    color: #000000; /* Paragraph text color */
+    line-height: 1.5; /* Spacing for readability */
+    margin: 0px 15px 0 15px; /* Left and right spacing */
+}
+
+.vid-container {
+    background-image: url('../images/video.jpg'); /* Background image for video section */
+    margin: 0; /* Remove default margin */
+    background-size: cover; /* Fully cover container */
+    height: 500px; /* Fixed height */
+}
+
+#vid {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    display: inline-block; /* Fit to content */
+    padding: 30px; /* Inner spacing */
+    margin: 10px; /* Outer spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Larger text */
+}
+
+.web-wrapper {
+    position: relative; /* Required for background or layering */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 0; /* No padding inside */
+    background-size: cover; /* Scale background image to fit */
+    margin: 15px; /* Margin around wrapper */
+}
+
+.web-wrapper h3 {
+    margin: 15px; /* Margin around heading */
+}
+
+.web-wrapper p {
+    color: #000000; /* Black paragraph text */
+    line-height: 1.5; /* Comfortable line spacing */
+    margin: 0px 15px; /* Horizontal spacing */
+}
+
+.web-container {
+    background-image: url('../images/web.jpg'); /* Background image for web section */
+    margin: 0; /* Reset margin */
+    background-size: cover; /* Stretch to cover area */
+    height: 500px; /* Set container height */
+}
+
+#web {
+    background-color: #000000; /* Button background color */
+    color: #ffffff; /* Button text color */
+    display: inline-block; /* Fit to text size */
+    padding: 30px; /* Padding inside button */
+    margin: 10px; /* Margin around button */
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 1.5em; /* Increase font size */
+}
+
+.pri-wrapper {
+    position: relative; /* For layered or background-positioned content */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 0; /* No internal padding */
+    background-size: cover; /* Cover full background area */
+    margin: 15px; /* Margin around wrapper */
+}
+
+.pri-wrapper h3 {
+    margin: 15px; /* Spacing around heading */
+}
+
+.pri-wrapper p {
+    color: #000000; /* Black text */
+    line-height: 1.5; /* Better readability */
+    margin: 0 15px; /* Horizontal spacing */
+}
+
+.pri-container {
+    background-image: url('../images/print.jpg'); /* Background image for print section */
+    margin: 0; /* Reset margin */
+    background-size: cover; /* Stretch background to fill */
+    height: 500px; /* Fixed height */
+}
+
+#pri {
+    background-color: #000000; /* Dark button background */
+    color: #ffffff; /* White text */
+    display: inline-block; /* Fit to content */
+    padding: 30px; /* Space around text */
+    margin: 10px; /* Margin outside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Large text size */
+}
+
+.vis-wrapper {
+    position: relative; /* Position relative to hold absolutely positioned children */
+    background-image: url('../images/vision.jpg'); /* Background image for vision section */
+    padding: 35px 0 0 0; /* Padding at the top */
+    background-size: cover; /* Ensure background covers container */
+    margin: 0; /* No outer margin */
+}
+
+.vis-wrapper h3 {
+    margin: 10px 15px; /* Margin around the heading */
+    color: #ffffff; /* White text for contrast */
+}
+
+.vis-wrapper p {
+    color: #ffffff; /* White paragraph text */
+    line-height: 1.5; /* Improve readability */
+    margin: 0 15px; /* Horizontal margin */
+}
+
+#vis {
+    background-color: #07092a; /* Deep blue background for contrast */
+    color: #ffffff; /* White text */
+    display: inline-block; /* Fit to content size */
+    padding: 30px; /* Internal spacing */
+    margin: 10px; /* Outer spacing */	
+    cursor: pointer; /* Cursor pointer on hover */
+    border: #c78c06 1.5px solid; /* Gold border */
+    font-size: 1.5em; /* Enlarged text */
+}
+
+.tea-h2 {
+    margin: 25px 0 15px 15px; /* Section title margin: top, right/left, bottom */
+}
+
+.joh-wrapper {
+    position: relative; /* Required for layered positioning */
+    background-color: #ffe6ac; /* Light yellow background */
+    padding: 0 0 35px 0; /* Bottom padding */
+    margin: 0 0 15px 15px; /* Bottom and left margin */
+    background-size: cover; /* Stretch background */
+    width: 100%; /* Full width container */
+}
+
+.joh-container {
+    background-image: url('../images/john.jpg'); /* Background image of John */
+    margin: 0 15px; /* Horizontal spacing */
+    background-size: cover; /* Cover full container */
+    height: 500px; /* Fixed height */
+    width: 100%; /* Full width */
+    position: relative; /* For layered layout */
+    background-color: #ffe6ac; /* Backup background color */
+}
+
+.joh-wrapper h3 {
+    margin: 0 0 0 15px; /* Left margin only */
+}
+
+.joh-wrapper h4 {
+    margin: 5px 0 0 15px; /* Top margin for spacing from h3 */
+}
+
+.joh-wrapper p {
+    color: #000000; /* Black text color */
+    line-height: 1.5; /* Spacing for readability */
+    margin: 15px; /* All-around margin */
+}
+
+.bob-wrapper {
+    position: relative; /* Relative positioning for layout control */
+    background-color: #ffe6ac; /* Light yellow background */
+    margin: 0 15px; /* Horizontal margin */
+    padding: 0 0 35px 0; /* Bottom padding */
+    background-size: cover; /* Scale background to cover */
+    width: 100%; /* Full width */
+}
+
+.bob-container {
+    background-image: url('../images/bob.jpg'); /* Bob's section background image */
+    margin: 0 15px; /* Horizontal spacing */
+    background-size: cover; /* Cover full container area */
+    position: relative; /* Needed for absolute children if any */
+    background-color: #ffe6ac; /* Fallback background color */
+    width: 100%; /* Stretch to container width */
+    height: 500px; /* Fixed height */
+}
+
+.bob-wrapper h3 {
+    margin: 00 0 15px; /* Bottom margin for heading */
+}
+
+.bob-wrapper h4 {
+    margin: 5px 0 0 15px; /* Top and left margin */
+}
+
+.bob-wrapper p {
+    color: #000000; /* Black paragraph text */
+    line-height: 1.5; /* Readable line spacing */
+    margin: 0px 15px ; /* Left and right spacing */
+}
+
+.hr-line {
+    border: none; /* Remove default border */
+    height: 2px; /* Line thickness */
+    background-color: #c78c06; /* Divider color: gold */
+    margin: 0 15px 15px 15px; /* Space around line */
+}
+
+.contact-form {
+    border: 2px solid #000; /* Solid black border around form */
+    padding: 20px; /* Inner spacing */
+}
+
+.text-box {
+    width: 100%; /* Full width input */
+    max-width: 100%; /* Prevent overflow */
+    height: 2rem; /* Input height */
+    font-size: 1.5rem; /* Larger font for clarity */
+    margin: 0.5rem 0; /* Vertical spacing between inputs */
+}
+
+#name {
+    text-transform: capitalize; /* Capitalize first letter */
+}
+
+#email {
+    text-transform: lowercase; /* Convert all text to lowercase */
+}
+
+#message {
+    height: 7rem; /* Taller input for messages */
+    line-height: 1.5; /* Spacing within message text */
+    padding-top: 0.1rem; /* Minor top padding */
+    resize: none; /* Disable resizing */
+}
+
+label {
+    font-size: 1rem; /* Label text size */
+    font-weight: bold; /* Emphasize labels */
+}
+
+footer h2 {
+    margin: 35px 0 0 20px; /* Heading margin: top, right, bottom, left */
+}
+
+.con-wrapper h3 {
+    margin: 25px 0 25px 0; /* Vertical spacing around heading */
+}
+
+.con-wrapper {
+    position: relative; /* For background or layout positioning */
+    margin: 0 15px; /* Horizontal margin */
+    background-size: cover; /* Background covers full area */
+}
+
+.text-box {
+    margin: 0.5rem 0; /* Space between text boxes */
+}
+
+#con2 {
+    background-color: #000000; /* Black background */
+    color: #c78c06; /* Gold text color */
+    display: inline-block; /* Fit content size */
+    padding: 5px; /* Padding inside button */
+    margin: 10px 0 0 0; /* Top margin */
+    cursor: pointer; /* Cursor changes to pointer */
+    font-size: 1.5em; /* Large text */
+}
 
 .ope-wrapper {
-            position: relative;
-            padding: 15px;
-            background-size: cover;
-            margin: 0;
-        }
-.ope-wrapper h3 {
-            margin: 15px 0 0 0;
+    position: relative; /* For flexible layout */
+    padding: 15px; /* Inner spacing */
+    background-size: cover; /* Stretch background */
+    margin: 0; /* Reset margin */
+}
 
-            }
-              
+.ope-wrapper h3 {
+    margin: 15px 0 0 0; /* Top spacing */
+}
 
 .table {
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 5px;
-    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+    background-color: #ffffff; /* White table background */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
 }
 
 .table th, td {
-    border: 2px solid #000;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .table th {
-    background-color: #ffe6ac;
-    font-weight: normal;
-    text-align: center;
+    border: 2px solid #000; /* Black border for cells */
+    padding: 10px; /* Space inside cells */
+    text-align: left; /* Align text left */
+}
+
+.table th {
+    background-color: #ffe6ac; /* Yellow background for headers */
+    font-weight: normal; /* Normal font weight */
+    text-align: center; /* Center-align headers */
 }
 
 .loc-wrapper {
-            position: relative;
-            margin: 15px;
-            background-size: cover;
-
+    position: relative; /* For layout control */
+    margin: 15px; /* Outer spacing */
+    background-size: cover; /* Background image covers entire area */
 }
+
 .loc-wrapper h3 {
+    font-size: 2em; /* Larger heading size */
+}
 
-        font-size: 2em;
-
-} 
-
-    .map {
-        width: 100%;
-        height: 450px;
-        border: 0;
+.map {
+    width: 100%; /* Full width map */
+    height: 450px; /* Fixed map height */
+    border: 0; /* Remove iframe border */
 }
 
 footer {
-    position: relative;
-    line-height: 2.5em;
-    width: 100vw;            /* full viewport width */
-    left: 50%;
+    position: relative; /* For nested absolute elements if needed */
+    line-height: 2.5em; /* Vertical spacing between lines */
+    width: 100vw; /* Full viewport width */
+    left: 50%; /* Center align trick with margin */
     right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background-color: #222;  /* your bleed background */
-    color: #c78c06;
-    padding: 20px;
-  }
-  
-  footer > * {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+    margin-left: -50vw; /* Pull to the left by half viewport */
+    margin-right: -50vw; /* Pull to the right by half viewport */
+    background-color: #222; /* Dark background color */
+    color: #c78c06; /* Gold text color */
+    padding: 20px; /* Space inside footer */
+}
 
-
+footer > * {
+    max-width: 1200px; /* Limit width of footer content */
+    margin: 0 auto; /* Center footer content */
+    padding: 0 15px; /* Horizontal inner spacing */
+}
 @media screen and (min-width: 760px) {
-    /* Make header horizontal */
     header {
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #000;
-        padding: 0 30px;
-        flex-wrap: nowrap; /* fix: stop items from dropping to new line */
-        gap: 1.5rem;
-      }
+        display: flex; /* Arrange header items horizontally */
+        align-items: center; /* Vertically center items */
+        flex-wrap: nowrap; /* Keep all items on one line */
+        background-color: #000; /* Ensure dark header background */
+        padding: 0 30px; /* Horizontal padding */
+        gap: 1.5rem; /* Spacing between header items */
+    }
 
-      .body-wrapper {
-        max-width: 1200px;
-      }
+    .body-wrapper {
+        max-width: 1200px; /* Expand body for larger screens */
+    }
+
+    .body-wrapper2 {
+        max-width: 1200px; /* Optional secondary container max width */
+        padding: 0 95px; /* Inner spacing for content */
+    }
 
     .hdr-container-1 {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      background-color: transparent;
-      height: auto;
-      margin: 0;
+        display: flex; /* Horizontal layout */
+        align-items: center; /* Vertically align items */
+        gap: 2rem; /* Space between logo and nav */
+        background-color: transparent; /* Clear background for desktop */
+        height: auto; /* Adjust height automatically */
+        margin: 0; /* Reset margin */
     }
-  
+
     #logo {
-      position: static;
-      width: 70px;
-      height: 70px;
-      flex-shrink: 0;
-      margin: 5px 15px 25px 70px;
+        position: static; /* Let logo flow in layout */
+        width: 70px; /* Smaller logo size */
+        height: 70px; /* Match new size */
+        flex-shrink: 0; /* Prevent shrinking */
+        margin: 5px 15px 25px 70px; /* Add spacing */
     }
-  
+
     .hdr-container-1 nav ul {
-      display: flex;
-      gap: 1.5rem;
-      padding: 0;
-      margin: 0;
+        display: flex; /* Display menu horizontally */
+        gap: 1.5rem; /* Spacing between menu items */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
     }
-  
+
     .hdr-container-1 nav ul li {
-      height: auto;
-      padding: 0;
-      display: block;
+        height: auto; /* Auto height */
+        padding: 0; /* Remove padding */
+        display: block; /* Block elements in flex container */
     }
-  
+
     .hdr-container-1 nav ul li a {
-      color: #c78c06;
-      font-weight: bold;
-      padding: 10px 15px;
-      font-size: 1rem;
+        color: #c78c06; /* Gold text */
+        font-weight: bold; /* Bold menu text */
+        padding: 10px 15px; /* Padding around link */
+        font-size: 1rem; /* Standard size */
     }
-    
+
     .hdr-container-2 nav ul,
     .hdr-container-1 nav ul {
-     gap: 1rem;
-}
+        gap: 1rem; /* Uniform gap */
+    }
+
     .hdr-container-1 nav ul li a:hover {
-      background-color: #c78c06;
-      color: #000;
+        background-color: #c78c06; /* Highlight background */
+        color: #000; /* Invert text color */
     }
-  
+
     .hdr-container-2 {
-      background-color: transparent;
-      padding: 0;
-      display: flex;
-      align-items: center;
+        background-color: transparent; /* Remove mobile styling */
+        padding: 0; /* No padding */
+        display: flex; /* Align items horizontally */
+        align-items: center; /* Center items vertically */
     }
-  
+
     .hdr-container-2 nav ul {
-      display: flex;
-      gap: 1.5rem;
-      padding: 0;
-      margin: 0;
+        display: flex; /* Horizontal menu */
+        gap: 1.5rem; /* Space between items */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
     }
-  
+
     .hdr-container-2 nav ul li {
-      margin: 0;
-      padding: 0;
+        margin: 0; /* Reset spacing */
+        padding: 0; /* Reset spacing */
     }
-  
+
     .hdr-container-2 nav ul li a {
-      color: #c78c06;
-      font-weight: bold;
-      padding: 10px 15px;
-      font-size: 1rem;
+        color: #c78c06; /* Gold menu text */
+        font-weight: bold; /* Bold font */
+        padding: 10px 15px; /* Clickable area */
+        font-size: 1rem; /* Standard size */
     }
-  
+
     .hdr-container-1 nav ul li:first-child a {
-        background-color: #c78c06;
-        padding: 15px 30px;
-        color: #000000;
+        background-color: #c78c06; /* Highlight first link */
+        padding: 15px 30px; /* Larger padding */
+        color: #000000; /* Black text */
     }
 
     .hdr-container-2 nav ul li a:hover {
-      background-color: #c78c06;
-      color: #000;
+        background-color: #c78c06; /* Highlight hover */
+        color: #000; /* Invert text */
     }
-  
+
     .search-box {
-      display: flex;
-      align-items: center;
-      /* border: 2px solid #c78c06; */
-
-      padding: 0;
-      margin-left: 2rem;
-      height: 5px;
+        display: flex; /* Flex layout */
+        align-items: center; /* Vertically center */
+        padding: 0; /* No padding */
+        margin-left: 2rem; /* Shift to the right */
+        height: 5px; /* Compact height */
     }
-  
+
     #Search {
-      border: #a1a1a1 2px solid;
-      /* padding: 8px 10px; */
-      font-size: 1rem;
-      width: 200px;
-      outline: none;
-    }
-  
-    #mag {
-      background: transparent;
-      border: #c78c06 1px solid;
-      color: #c78c06;
-      font-size: 1.25rem;
-      cursor: pointer;
+        border: #a1a1a1 2px solid; /* Grey border */
+        font-size: 1rem; /* Standard input text */
+        width: 200px; /* Input width */
+        outline: none; /* Remove highlight on click */
     }
 
-    .wel-wrapper {
+#mag {
+    background: transparent; /* Remove background color */
+    border: #c78c06 1px solid; /* Gold border */
+    color: #c78c06; /* Gold icon */
+    font-size: 1.25rem; /* Adjust size */
+    cursor: pointer; /* Pointer on hover */
+}
 
-        position: relative;
-        background-image: url('../images/main-banner.jpg');
-        background-size: cover; 
-        background-position: center;
-        display: flex;
-    }
- 
-    .wel-container {
-        background-color: #0000009b;
-        margin: 30px 100px; 
-        padding:25px 20px 5px 6px;
-    }
-    .abo-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-        align-items: center;
-        padding:10px 100px;
-        
-      }
-    
-      .abo-container {
-        height: 250px;
-        width: 500px
+.wel-wrapper {
+    position: relative; /* Needed for absolute positioning of child elements */
+    background-image: url('../images/main-banner.jpg'); /* Background image for the welcome banner */
+    background-size: cover; /* Make background image cover the container */
+    background-position: center; /* Center the background image */
+    display: flex; /* Flex container for aligning children */
+}
 
-      }
-    
-      .abo-us {
-        padding: 5px;
-      }
-    
-      .abo-us h2 {
-        font-size: 2.5em;
-        margin: 0 0 30px 0;
-    }
-    
-      .abo-us p {
-        font-size: 1rem;
-        line-height: 1;
-        margin: 0;
-      }
+.wel-container {
+    background-color: #0000009b; /* Semi-transparent black overlay for contrast */
+    margin: 30px 100px; /* Space around the welcome container */
+    padding: 25px 20px 5px 6px; /* Internal spacing for content */
+}
 
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(6, 2fr); /* 3 equal columns */
-        gap: 15px;
-        padding: 20px;
-      }
-    
-      .our-h2 {
-   
-      }
-    
-      /* Row 1: dig and mar take up 2 columns */
-      .dig-wrapper {
-        grid-column: 1 / span 3;
-        grid-row: 1;
-      }
-    
-      .mar-wrapper {
-        grid-column: 4 / span 3;
-        grid-row: 1;
-      }
-    
-      /* Row 2: vid, web, pri each take 1 column */
-      .vid-wrapper {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-      }
-    
-      .web-wrapper {
-        grid-column: 3 / span 2;
-        grid-row: 2;
-      }
-    
-      .pri-wrapper {
-        grid-column: 5 / span 2;
-        grid-row: 2;
-      }
-    
-      /* Remove margins from individual wrappers */
-      .dig-wrapper,
-      .mar-wrapper,
-      .vid-wrapper,
-      .web-wrapper,
-      .pri-wrapper {
-        margin: 0;
-      }
-        
-      .pri-container,
-      .vid-container,
-      .web-container {
-        width: 100%;
-        height: 250px;
-      }
-      .dig-container,
-      .mar-container {
-        width: 100%;
-        height: 400px;
-      }
+.abo-wrapper {
+    display: grid; /* Grid layout for about section */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 0; /* No gap between columns */
+    align-items: center; /* Vertically center items */
+    padding: 10px 100px; /* Horizontal and vertical padding */
+}
 
-        #dig, #mar, #vid, #web, #pri {
-            width: calc(100% - 20px);
-    
-          }
+.abo-container {
+    height: 250px; /* Fixed height */
+    width: 500px; /* Fixed width */
+}
 
-          .vis-wrapper {
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            width: 100vw; /* full width of viewport */
-            background-image: url('../images/vision.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-          }
+.abo-us {
+    padding: 5px; /* Internal padding */
+}
 
-        .vis-wrapper p {
-            margin:0 150px;
-        }
-        .vis-wrapper h3 {
-            margin: 15px 150px;
-        }
-        #vis {
-            margin: 15px 150px;
-        }
+.abo-us h2 {
+    font-size: 2.5em; /* Large heading size */
+    margin: 0 0 30px 0; /* Bottom spacing */
+}
 
+.abo-us p {
+    font-size: 1rem; /* Normal paragraph text */
+    line-height: 1; /* Tight line spacing */
+    margin: 0; /* Reset margin */
+}
 
+.services-grid {
+    display: grid; /* Use grid layout for services */
+    grid-template-columns: repeat(6, 2fr); /* 6 equal columns */
+    gap: 15px; /* Space between grid items */
+    padding: 20px; /* Padding around grid */
+}
 
+.our-h2 {
+    /* already declared earlier if reused */
+}
 
+.dig-wrapper {
+    grid-column: 1 / span 3; /* Span 3 columns */
+    grid-row: 1; /* First row */
+}
 
-      
-        .team-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas:
-              "john-img john-text"
-              "bob-text bob-img";
-            gap: 0px;
-            margin: 40px 20px;
-          }
-          
-          /* Assign each section to its spot */
-          .joh-container {
-            grid-area: john-img;
-            background-image: url('../images/john.jpg');
-            background-size: cover;
-            background-position: center;
-            width: 600px;
-            height: 400px;
-            margin: 0;
-          }
-          
-          .joh-wrapper {
-            grid-area: john-text;
-            background-color: #ffe6ac;
-            padding: 20px;
-            margin: 0;
-            width: 560px;
-            height: 360px;
-          }
-          
-          .bob-wrapper {
-            grid-area: bob-text;
-            background-color: #ffe6ac;
-            padding: 20px;
-            margin: 0;
-            width: 560px;
-            height: 360px;
-          }
-          
-          .bob-container {
-            grid-area: bob-img;
-            background-image: url('../images/bob.jpg');
-            background-size: cover;
-            background-position: center;
-            width: 600px;
-            height: 400px;
-            margin: 0;
-          }
+.mar-wrapper {
+    grid-column: 4 / span 3; /* Span 3 columns starting at 4th */
+    grid-row: 1; /* Same row as dig-wrapper */
+}
 
-          .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 2fr); 
-            gap: 0px;
-            padding: 0px;
-          }
-        
-            
-          /* Row 1: dig and mar take up 2 columns */
-          .con-wrapper {
-            grid-column: 1 / span 2;
-            grid-row: 1;
-          }
-        
-          .loc-wrapper {
-            grid-column: 3 / span 2;
-            grid-row: 1;
-          }
-        
-          /* Row 2: vid, web, pri each take 1 column */
-          .ope-wrapper {
-            grid-column: 1 / span 4;
-            grid-row: 2;
-          }
+.vid-wrapper {
+    grid-column: 1 / span 2; /* First two columns */
+    grid-row: 2; /* Second row */
+}
 
+.web-wrapper {
+    grid-column: 3 / span 2; /* Middle two columns */
+    grid-row: 2; /* Second row */
+}
 
-        }
+.pri-wrapper {
+    grid-column: 5 / span 2; /* Last two columns */
+    grid-row: 2; /* Second row */
+}
+
+.dig-wrapper,
+.mar-wrapper,
+.vid-wrapper,
+.web-wrapper,
+.pri-wrapper {
+    margin: 0; /* Remove all default margin */
+}
+
+.pri-container,
+.vid-container,
+.web-container {
+    width: 100%; /* Full width */
+    height: 250px; /* Reduced height */
+}
+
+.dig-container,
+.mar-container {
+    width: 100%; /* Full width */
+    height: 400px; /* Taller sections */
+}
+#dig, #mar, #vid, #web, #pri {
+    width: calc(100% - 20px); /* Make buttons responsive and aligned */
+}
+
+.vis-wrapper {
+    position: relative;
+    left: 50%; /* Center full-bleed section */
+    right: 50%;
+    margin-left: -50vw; /* Offset by half the viewport width */
+    margin-right: -50vw;
+    width: 100vw; /* Full viewport width */
+    background-size: cover; /* Cover entire area with background */
+    background-position: center; /* Center background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.vis-inner {
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center content */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.team-grid {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    grid-template-areas:
+        "john-img john-text"
+        "bob-text bob-img"; /* Custom layout for team */
+    gap: 0px; /* No spacing between items */
+    margin: 40px 20px; /* Outer margin */
+}
+
+.joh-container {
+    grid-area: john-img; /* Position John image */
+    background-image: url('../images/john.jpg');
+    background-size: cover; /* Cover container */
+    background-position: center; /* Center background */
+    width: 485px; /* Fixed width */
+    height: 320px; /* Fixed height */
+    margin: 0; /* Reset margin */
+}
+
+.joh-wrapper {
+    grid-area: john-text; /* Position John text */
+    background-color: #ffe6ac; /* Background color */
+    padding: 20px; /* Inner padding */
+    margin: 0; /* Reset outer margin */
+    width: 445px; /* Fixed width */
+    height: 280px; /* Fixed height */
+}
+
+.bob-wrapper {
+    grid-area: bob-text; /* Position Bob text */
+    background-color: #ffe6ac; /* Background */
+    padding: 20px; /* Inner spacing */
+    margin: 0; /* No margin */
+    width: 445px; /* Width of text block */
+    height: 280px; /* Fixed height */
+}
+
+.bob-container {
+    grid-area: bob-img; /* Position Bob image */
+    background-image: url('../images/bob.jpg');
+    background-size: cover; /* Cover container */
+    background-position: center; /* Center the background */
+    width: 485px; /* Image width */
+    height: 320px; /* Image height */
+    margin: 0; /* No outer spacing */
+}
+
+.slh-grid {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(4, 2fr); /* 4 equal columns */
+    gap: 0px; /* No spacing between items */
+    padding: 0px; /* No internal padding */
+}
+
+.con-wrapper {
+    grid-column: 1 / span 2; /* Take up first half of grid */
+    grid-row: 1; /* First row */
+}
+
+.loc-wrapper {
+    grid-column: 3 / span 2; /* Take up second half of grid */
+    grid-row: 1;
+}
+
+.ope-wrapper {
+    grid-column: 1 / span 4; /* Span full row */
+    grid-row: 2; /* Second row */
+}
+.map {
+    width: 100%; /* Full width map */
+    height: 450px; /* Standard height for embedded map */
+    border: 0; /* Remove default border */
+}
+
+footer {
+    position: relative; /* Base positioning */
+    line-height: 2.5em; /* Spacing between lines */
+    width: 100vw; /* Full viewport width */
+    left: 50%; /* Center offset */
+    right: 50%;
+    margin-left: -50vw; /* Align footer to viewport */
+    margin-right: -50vw;
+    background-color: #222; /* Dark background color */
+    color: #c78c06; /* Gold font color */
+    padding: 20px; /* Padding inside footer */
+}
+
+footer > * {
+    max-width: 1200px; /* Restrict width of footer content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 15px; /* Horizontal inner padding */
+}
+}
